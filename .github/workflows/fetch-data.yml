@@ -1,3 +1,4 @@
+# Secrets: Hanzo KMS (kms.hanzo.ai) — auth via Hanzo IAM
 name: Fetch Download Data
 
 on:
@@ -13,8 +14,15 @@ jobs:
       # added or changed files to the repository.
       contents: write
     env:
-      PAT: ${{ secrets.PAT }} 
+      PAT: ${{ steps.kms.outputs.PAT }} 
     steps:
+      - name: Fetch secrets from Hanzo KMS
+        id: kms
+        uses: hanzoui/.github/actions/kms-secrets@main
+        with:
+          kms_client_id: ${{ secrets.KMS_CLIENT_ID }}
+          kms_client_secret: ${{ secrets.KMS_CLIENT_SECRET }}
+          secrets: 'PAT'
       - name: Checkout repository
         uses: actions/checkout@v4
 
