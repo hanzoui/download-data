@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ComfyUI Download Data",
-  description: "Portable ComfyUI downloads, tracked daily.",
+  title: "Hanzo Studio Download Data",
+  description: "Portable Hanzo Studio downloads, tracked daily.",
 };
 
 export default function RootLayout({

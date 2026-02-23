@@ -204,7 +204,7 @@ export function DailyDownloadsChart() {
       <CardHeader>
         <CardTitle>Daily New Downloads</CardTitle>
         <CardDescription>
-          Net new downloads per day for all portable ComfyUI releases.
+          Net new downloads per day for all portable Hanzo Studio releases.
           {data.length > 1 && (
             <div className="mt-2">
               <p className="text-sm">

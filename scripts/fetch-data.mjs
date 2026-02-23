@@ -4,7 +4,7 @@ import fs from 'fs';
 
 const dataDir = path.resolve(process.cwd(), 'data');
 const dbPath = path.join(dataDir, 'downloads.db');
-const githubRepo = 'comfyanonymous/ComfyUI';
+const githubRepo = 'hanzoai/studio';
 const githubApiUrl = `https://api.github.com/repos/${githubRepo}/releases`;
 
 // Inject PAT from secrets
@@ -277,7 +277,7 @@ async function fetchGitHubReleases() {
     // Build headers and add auth if available
     const headers = {
       'Accept': 'application/vnd.github.v3+json',
-      'User-Agent': 'ComfyUI-Download-Stats-Fetcher (Node.js)'
+      'User-Agent': 'Hanzo Studio-Download-Stats-Fetcher (Node.js)'
     };
     if (githubToken) {
       headers.Authorization = `token ${githubToken}`;
