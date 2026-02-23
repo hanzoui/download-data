@@ -1,10 +1,10 @@
-# ComfyUI Download Data
+# Hanzo Studio Download Data
 
-A simple dashboard to track, log, and visualize daily download counts for the portable version of **ComfyUI**.
+A simple dashboard to track, log, and visualize daily download counts for the portable version of **Hanzo Studio**.
 
 ## Overview
 
-This project fetches release and asset download data from the ComfyUI GitHub repository, stores it in a local SQLite database, aggregates daily download totals, and presents interactive charts through a Next.js dashboard.
+This project fetches release and asset download data from the Hanzo Studio GitHub repository, stores it in a local SQLite database, aggregates daily download totals, and presents interactive charts through a Next.js dashboard.
 
 ## Features
 
@@ -32,7 +32,7 @@ This project fetches release and asset download data from the ComfyUI GitHub rep
 ### Installation
 
 ```bash
-git clone https://github.com/Comfy-Org/download-data.git
+git clone https://github.com/hanzoui/download-data.git
 cd download-data
 pnpm install
 ```
