@@ -277,7 +277,7 @@ async function fetchGitHubReleases() {
     // Build headers and add auth if available
     const headers = {
       'Accept': 'application/vnd.github.v3+json',
-      'User-Agent': 'Hanzo Studio-Download-Stats-Fetcher (Node.js)'
+      'User-Agent': 'HanzoStudio-Download-Stats-Fetcher (Node.js)'
     };
     if (githubToken) {
       headers.Authorization = `token ${githubToken}`;
